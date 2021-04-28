@@ -4,9 +4,13 @@
 
 ## Introduction
 
-This repository contains the code and models for the following paper. 
+This repository contains the code and models for the following paper.
 
 > [Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks](https://arxiv.org/pdf/2104.01797v2.pdf)  
 > Cheng Yu, Bo Wang, Bo Yang, Robby T. Tan  
 > Computer Vision and Pattern Recognition, CVPR 2021.
 
+
+Overview of the proposed method:
+
+<p align="center"><img src="3DMPP_framework.png" width="98%"></p>
