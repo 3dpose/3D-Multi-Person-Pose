@@ -14,3 +14,9 @@ This repository contains the code and models for the following paper.
 Overview of the proposed method:
 
 <p align="center"><img src="3DMPP_framework.png" width="98%"></p>
+
+## Installation
+
+### Dependencies
+[Pytorch](https://pytorch.org/) >= 1.3<br>
+Python >= 3.6<br>
