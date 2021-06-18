@@ -1,0 +1,5 @@
+torchsul 
+tqdm
+scipy 
+cython
+munkres
