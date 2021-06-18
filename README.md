@@ -23,8 +23,8 @@ Python >= 3.6<br>
 
 Create an enviroment. 
 ```
-conda create -n gntcn python=3.6
-conda activate gntcn
+conda create -n 3dmpp python=3.6
+conda activate 3dmpp
 ```
 Install the latest version of pytorch (tested on pytorch 1.5 - 1.7) based on your OS and GPU driver installed following [install pytorch](https://pytorch.org/). For example, command to use on Linux with CUDA 11.0 is like:
 ```
