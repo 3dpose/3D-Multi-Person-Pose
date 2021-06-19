@@ -37,8 +37,6 @@ class InteDataset():
 			pred_td_dep.append(data)
 		self.pred_td_dep = pred_td_dep
 
-		print(len(self.pred_bu), len(self.pred_bu_dep), len(self.pred_td), len(self.pred_td_dep))
-
 	def __iter__(self):
 		self.pos = 0
 		return self 
@@ -61,12 +59,10 @@ class InteDataset():
 
 		source_pts = np.stack([pred_td, pred_bu], axis=1)
 		source_dep = np.stack([pred_td_dep, pred_bu_dep], axis=1)
-		# print(source_pts.shape, source_dep.shape)
 
 		num_frames = source_pts.shape[0]
 		source_pts = source_pts.reshape([num_frames, -1])
 		source_dep = source_dep.reshape([num_frames, -1])
-		# print(source_pts.shape, source_dep.shape)
 		source_dep = source_dep / 1000
 
 		vid_inst = self.vid_inst[self.pos]
