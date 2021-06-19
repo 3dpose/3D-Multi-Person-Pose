@@ -44,42 +44,30 @@ python setup.py build_ext --inplace
 cd ../..
 ```
 
-## Pre-trained Models
+## Models and Testing Data
 
-Download the pre-trained model and processed human keypoint files [here](https://www.dropbox.com/s/n1twh0v5cyzd0z9/3DMPP.zip?dl=0), and unzip the downloaded zip file to this project's directory, two folders are expected to see after doing that (i.e., `./ckpts` and `./mupots`).
+### Pre-trained Models
 
-## Usage 
-
-### Prepare the data
-
-MuPoTS eval set is needed to perform evaluation, which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/) (download the mupots-3d-eval.zip file, unzip it, and run `get_mupots-3d.sh` to download the dataset). After the download is complete, MultiPersonTestSet.zip (5.6 GB) is avaiable. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
-```
-${3D-Multi-Person-Pose_ROOT}
-|-- ckpts
-|-- lib
-|-- MultiPersonTestSet
-|-- mupots
-|-- util
-|-- 3DMPP_framework.png
-|-- calculate_mupots_btmup.py
-|-- other python code, LICENSE, and README files
-...
-```
+Download the pre-trained model and processed human keypoint files [here](https://www.dropbox.com/s/n1twh0v5cyzd0z9/3DMPP.zip?dl=0), and unzip the downloaded zip file to this project's root directory, two folders are expected to see after doing that (i.e., `./ckpts` and `./mupots`).
 
 ### MuPoTS dataset evaluation
 MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the main paper, which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
 ```
 ${3D-Multi-Person-Pose_ROOT}
-|-- ckpts
+|-- ckpts              <-- the downloaded pre-trained Models
 |-- lib
-|-- MultiPersonTestSet <-- Newly added MuPoTS eval set
-|-- mupots
+|-- MultiPersonTestSet <-- the newly added MuPoTS eval set
+|-- mupots             <-- the downloaded processed human keypoint files
 |-- util
 |-- 3DMPP_framework.png
 |-- calculate_mupots_btmup.py
 |-- other python code, LICENSE, and README files
 ...
 ```
+
+## Usage 
+
+### MuPoTS dataset evaluation
 
 #### 3D Multi-Person Pose Estimation Evaluation on MuPoTS Dataset
 
@@ -99,6 +87,7 @@ The following table is similar to Table 3 in the main paper, which shows the qua
 | Camera-centric (absolute 3D pose) | [Cheng et al., AAAI'21](https://arxiv.org/pdf/2012.11806v3.pdf) | 87.5 | 45.7 |
 | Camera-centric (absolute 3D pose) | [Our method](https://arxiv.org/pdf/2104.01797v2.pdf) | **89.6** | **48.0** |
 
+#### Run evaluation on MuPoTS dataset with estimated 2D joints as input
 
 We split the whole pipeline into several separate steps to make it more clear for the users. 
 
