@@ -60,12 +60,28 @@ ${3D-Multi-Person-Pose_ROOT}
 |-- MultiPersonTestSet
 |-- mupots
 |-- util
-|-- calculate_mupots_depth.py
+|-- 3DMPP_framework.png
+|-- calculate_mupots_btmup.py
 |-- other python code, LICENSE, and README files
 ...
 ```
 
-#### 3D Multi-person Pose Estimation Evaluation on MuPoTS Dataset
+### MuPoTS dataset evaluation
+MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the main paper, which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
+```
+${3D-Multi-Person-Pose_ROOT}
+|-- ckpts
+|-- lib
+|-- MultiPersonTestSet <-- Newly added MuPoTS eval set
+|-- mupots
+|-- util
+|-- 3DMPP_framework.png
+|-- calculate_mupots_btmup.py
+|-- other python code, LICENSE, and README files
+...
+```
+
+#### 3D Multi-Person Pose Estimation Evaluation on MuPoTS Dataset
 
 The following table is similar to Table 3 in the main paper, which shows the quantitative evaluations on MuPoTS-3D (best in **bold**). Please follow the instructions in the next section to reproduce the results (PCK and PCK_abs) in the table. 
 
