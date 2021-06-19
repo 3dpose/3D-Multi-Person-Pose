@@ -103,7 +103,7 @@ To evaluate the person-centric 3D multi-person pose estimation:
 ```
 python eval_mupots_pck.py
 ```
-After running the above code, the following PCK (person-centric, pelvis-based origin) value is expected, which matches the number reported in Table 3, PCK 89.6 (percentage) in the paper.
+After running the above code, the following PCK (person-centric, pelvis-based origin) value is expected, which matches the number reported in Table 3, PCK = 89 (percentage) in the paper.
 ```
 ...
 Seq: 18
@@ -112,9 +112,17 @@ Seq: 20
 PCK_MEAN: 0.8994453169938017
 ```
 
-To evaluate absolute PCK, run:
+To evaluate camera-centric (i.e., camera coordinates) 3D multi-person pose estimation:
 ```
 python eval_mupots_pck_abs.py
+```
+After running the above code, the following PCK_abs (camera-centric) value is expected, which matches the number reported in Table 3, PCK_abs = 48 (percentage) in the paper. 
+```
+...
+Seq: 18
+Seq: 19
+Seq: 20
+PCK_MEAN: 0.48514110933606175
 ```
 
 ## Citation
