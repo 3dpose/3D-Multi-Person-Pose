@@ -51,7 +51,7 @@ cd ../..
 Download the pre-trained model and processed human keypoint files [here](https://www.dropbox.com/s/n1twh0v5cyzd0z9/3DMPP.zip?dl=0), and unzip the downloaded zip file to this project's root directory, two folders are expected to see after doing that (i.e., `./ckpts` and `./mupots`).
 
 ### MuPoTS Dataset
-MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the main paper, which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
+MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
 ```
 ${3D-Multi-Person-Pose_ROOT}
 |-- ckpts              <-- the downloaded pre-trained Models
@@ -71,7 +71,7 @@ ${3D-Multi-Person-Pose_ROOT}
 
 #### 3D Multi-Person Pose Estimation Evaluation on MuPoTS Dataset
 
-The following table is similar to Table 3 in the main paper, which shows the quantitative evaluations on MuPoTS-3D (best in **bold**). Please follow the instructions in the next section to reproduce the results (PCK and PCK_abs) in the table. 
+The following table is similar to Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), which shows the quantitative evaluations on MuPoTS-3D (best in **bold**). Please follow the instructions in the [next section](https://github.com/3dpose/3D-Multi-Person-Pose#run-evaluation-on-mupots-dataset-with-estimated-2d-joints-as-input) to reproduce the results (PCK and PCK_abs) in the table. 
 
 | Group | Methods | PCK | PCK_abs |
 |-------------|-------------------------------------------------------------|------------------|------------------|
