@@ -54,7 +54,7 @@ Download the pre-trained model and processed human keypoint files [here](https:/
 
 MuPoTS eval set is needed to perform evaluation, which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/) (download the mupots-3d-eval.zip file, unzip it, and run `get_mupots-3d.sh` to download the dataset). After the download is complete, MultiPersonTestSet.zip (5.6 GB) is avaiable. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
 ```
-${GnTCN_ROOT}
+${3D-Multi-Person-Pose_ROOT}
 |-- ckpts
 |-- lib
 |-- MultiPersonTestSet
