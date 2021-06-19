@@ -10,10 +10,13 @@ This repository contains the code and models for the following paper.
 > Cheng Yu, Bo Wang, Bo Yang, Robby T. Tan  
 > Computer Vision and Pattern Recognition, CVPR 2021.
 
-
 Overview of the proposed method:
 
 <p align="center"><img src="3DMPP_framework.png" width="98%"></p>
+
+### Updates
+- 06/18/2021 evaluation code of PCK (person-centric) and PCK_abs (camera-centric), and pre-trained model for MuPoTS dataset tested and released
+
 
 ## Installation
 
