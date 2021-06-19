@@ -71,7 +71,7 @@ ${3D-Multi-Person-Pose_ROOT}
 
 #### 3D Multi-Person Pose Estimation Evaluation on MuPoTS Dataset
 
-The following table is similar to Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), which shows the quantitative evaluations on MuPoTS-3D (best in **bold**). Please follow the instructions in the [next section](https://github.com/3dpose/3D-Multi-Person-Pose#run-evaluation-on-mupots-dataset-with-estimated-2d-joints-as-input) to reproduce the results (PCK and PCK_abs) in the table. 
+The following table is similar to Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), where the quantitative evaluations on MuPoTS-3D dataset are provided (best performance in **bold**). Evaluation instructions to reproduce the results (PCK and PCK_abs) are provided in the [next section](https://github.com/3dpose/3D-Multi-Person-Pose#run-evaluation-on-mupots-dataset-with-estimated-2d-joints-as-input). 
 
 | Group | Methods | PCK | PCK_abs |
 |-------------|-------------------------------------------------------------|------------------|------------------|
