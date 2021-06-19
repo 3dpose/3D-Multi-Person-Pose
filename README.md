@@ -108,3 +108,16 @@ To evaluate absolute PCK, run:
 python eval_mupots_pck_abs.py
 ```
 
+## Citation
+
+If this work is useful for your research, please cite our paper. 
+```
+@InProceedings{Cheng_2021_CVPR,
+    author    = {Cheng, Yu and Wang, Bo and Yang, Bo and Tan, Robby T.},
+    title     = {Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {7649-7659}
+}
+```
