@@ -65,7 +65,17 @@ ${3D-Multi-Person-Pose_ROOT}
 ...
 ```
 
-### 3D human pose estimation evaluation on MuPoTS eval set
+#### 3D Multi-person Pose Estimation Evaluation on MuPoTS Dataset
+
+The following table is similar to Table 3 in the main paper, which shows the quantitative evaluations on MuPoTS-3D. Please follow the instructions in the next section to reproduce the results (PCK and PCK_abs) in the table. 
+
+| Group| Method | PCK | PCK_abs | 
+|-------------------------------------------------------------|------------------|------------------|---------------|
+|  Person-centric (relative) | [Mehta et al.](https://arxiv.org/pdf/1712.03453.pdf) (3DV'18) | 65.0 | N/A | 
+|  Person-centric (relative) | [Rogez et al.](https://arxiv.org/pdf/1803.00455.pdf) (IEEE TPAMI'19) | 70.6 | N/A |
+|  Person-centric (relative) | [Mehta et al.](https://dl.acm.org/doi/pdf/10.1145/3386569.3392410) (ACM TOG'20) | 70.4 | N/A |
+|  Person-centric (relative) | [Cheng et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Cheng_Occlusion-Aware_Networks_for_3D_Human_Pose_Estimation_in_Video_ICCV_2019_paper.pdf) (ICCV'19) | 74.6 | N/A |
+|  Person-centric (relative) | [Cheng et al.](https://ojs.aaai.org/index.php/AAAI/article/view/6689) (AAAI'20) | 80.5 | N/A |
 
 We split the whole pipeline into several separate steps to make it more clear for the users. 
 
