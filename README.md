@@ -97,7 +97,7 @@ python calculate_mupots_topdown_depth.py
 python calculate_mupots_btmup.py
 python calculate_mupots_integrate.py
 ```
-Please note that `python calculate_mupots_btmup.py` is going to take a while (~20 min depends on the mahine). 
+Please note that `python calculate_mupots_btmup.py` is going to take a while (> 30 min depends on the mahine). 
 
 To evaluate the person-centric 3D multi-person pose estimation:
 ```
