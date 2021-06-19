@@ -99,9 +99,17 @@ python calculate_mupots_integrate.py
 ```
 Please note that `python calculate_mupots_btmup.py` is going to take a while (~20 min depends on the mahine). 
 
-To evaluate relative PCK, run:
+To evaluate the person-centric 3D multi-person pose estimation:
 ```
 python eval_mupots_pck.py
+```
+After running the above code, the following PCK (person-centric, pelvis-based origin) value is expected, which matches the number reported in Table 3, PCK 89.6 (percentage) in the paper.
+```
+...
+Seq: 18
+Seq: 19
+Seq: 20
+PCK_MEAN: 0.8994453169938017
 ```
 
 To evaluate absolute PCK, run:
