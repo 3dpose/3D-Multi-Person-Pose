@@ -67,15 +67,22 @@ ${3D-Multi-Person-Pose_ROOT}
 
 #### 3D Multi-person Pose Estimation Evaluation on MuPoTS Dataset
 
-The following table is similar to Table 3 in the main paper, which shows the quantitative evaluations on MuPoTS-3D. Please follow the instructions in the next section to reproduce the results (PCK and PCK_abs) in the table. 
+The following table is similar to Table 3 in the main paper, which shows the quantitative evaluations on MuPoTS-3D (best in **bold**). Please follow the instructions in the next section to reproduce the results (PCK and PCK_abs) in the table. 
 
-| Group| Method | PCK | PCK_abs | 
-|-------------------------------------------------------------|------------------|------------------|---------------|
-|  Person-centric (relative) | [Mehta et al.](https://arxiv.org/pdf/1712.03453.pdf) (3DV'18) | 65.0 | N/A | 
-|  Person-centric (relative) | [Rogez et al.](https://arxiv.org/pdf/1803.00455.pdf) (IEEE TPAMI'19) | 70.6 | N/A |
-|  Person-centric (relative) | [Mehta et al.](https://dl.acm.org/doi/pdf/10.1145/3386569.3392410) (ACM TOG'20) | 70.4 | N/A |
-|  Person-centric (relative) | [Cheng et al.](https://openaccess.thecvf.com/content_ICCV_2019/papers/Cheng_Occlusion-Aware_Networks_for_3D_Human_Pose_Estimation_in_Video_ICCV_2019_paper.pdf) (ICCV'19) | 74.6 | N/A |
-|  Person-centric (relative) | [Cheng et al.](https://ojs.aaai.org/index.php/AAAI/article/view/6689) (AAAI'20) | 80.5 | N/A |
+| Group | Methods | PCK | PCK_abs |
+|-------------|-------------------------------------------------------------|------------------|------------------|
+| Person-centric (relative 3D pose) | [Mehta et al., 3DV'18](https://arxiv.org/pdf/1712.03453.pdf)| 65.0 | N/A |
+| Person-centric (relative 3D pose) | [Rogez et al., IEEE TPAMI'19](https://arxiv.org/pdf/1803.00455.pdf) | 70.6 | N/A |
+| Person-centric (relative 3D pose) | [Mehta et al., ACM TOG'20](https://dl.acm.org/doi/pdf/10.1145/3386569.3392410) | 70.4 | N/A |
+| Person-centric (relative 3D pose) | [Cheng et al., ICCV'19](https://openaccess.thecvf.com/content_ICCV_2019/papers/Cheng_Occlusion-Aware_Networks_for_3D_Human_Pose_Estimation_in_Video_ICCV_2019_paper.pdf) | 74.6 | N/A |
+| Person-centric (relative 3D pose) | [Cheng et al., AAAI'20](https://ojs.aaai.org/index.php/AAAI/article/view/6689) | 80.5 | N/A |
+| Camera-centric (absolute 3D pose) | [Moon et al., ICCV'19](https://openaccess.thecvf.com/content_ICCV_2019/papers/Moon_Camera_Distance-Aware_Top-Down_Approach_for_3D_Multi-Person_Pose_Estimation_From_ICCV_2019_paper.pdf) | 82.5 | 31.8 |
+| Camera-centric (absolute 3D pose) | [Lin et al., ECCV'20](https://arxiv.org/pdf/2007.08943.pdf) | 83.7 | 35.2 |
+| Camera-centric (absolute 3D pose) | [Zhen et al., ECCV'20](https://arxiv.org/pdf/2008.11469.pdf) | 80.5 | 38.7 |
+| Camera-centric (absolute 3D pose) | [Li et al., ECCV'20](https://arxiv.org/pdf/2008.00206.pdf) | 82.0 | 43.8 |
+| Camera-centric (absolute 3D pose) | [Cheng et al., AAAI'21](https://arxiv.org/pdf/2012.11806v3.pdf) | 87.5 | 45.7 |
+| Camera-centric (absolute 3D pose) | [Our method](https://arxiv.org/pdf/2104.01797v2.pdf) | **89.6** | **48.0** |
+
 
 We split the whole pipeline into several separate steps to make it more clear for the users. 
 
