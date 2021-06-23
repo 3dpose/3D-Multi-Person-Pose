@@ -127,6 +127,9 @@ Seq: 19
 Seq: 20
 PCK_MEAN: 0.48514110933606175
 ```
+## License
+
+The code is released under the MIT license. See [LICENSE](LICENSE) for details.
 
 ## Citation
 
