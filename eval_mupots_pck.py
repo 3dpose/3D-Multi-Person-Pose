@@ -77,8 +77,8 @@ for ts in range(20):
                 gtP = gt_p3d[k] - gt_p3d[k][:,14:15]
                 predP = pred_p3d[matches[k]]
                 predP = predP - predP[:,14:15]
-                # predP = util.norm_pose.norm_by_bone_length(predP, gtP, o1, safe_traversal_order[1:])
-                predP = util.norm_pose.procrustes(predP, gtP)
+                predP = util.norm_pose.norm_by_bone_length(predP, gtP, o1, safe_traversal_order[1:])
+                # predP = util.norm_pose.procrustes(predP, gtP)
                 pred_considered = 1
             else:
                 gtP = gt_p3d[k] - gt_p3d[k][:,14:15]
