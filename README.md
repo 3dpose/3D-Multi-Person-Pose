@@ -17,6 +17,7 @@ Overview of the proposed method:
 <p align="center"><img src="3DMPP_framework.png" width="98%"></p>
 
 ### Updates
+- 08/27/2021 evaluation code of PCK and PCK_abs to provide bone is updated by adding bone length normalization option with dataset adaptation
 - 06/18/2021 evaluation code of PCK (person-centric) and PCK_abs (camera-centric), and pre-trained model for MuPoTS dataset tested and released
 
 
@@ -114,8 +115,9 @@ After running the above code, the following PCK (person-centric, pelvis-based or
 Seq: 18
 Seq: 19
 Seq: 20
-PCK_MEAN: 0.8994453169938017
+PCK_MEAN: 0.8923134794267524
 ```
+Note: If procrustes analysis is used in `eval_mupots_pck.py`, the obtained value is slightly different (PCK_MEAN: 0.8994453169938017). 
 
 To evaluate camera-centric (i.e., camera coordinates) 3D multi-person pose estimation:
 ```
@@ -127,8 +129,10 @@ After running the above code, the following PCK_abs (camera-centric) value is ex
 Seq: 18
 Seq: 19
 Seq: 20
-PCK_MEAN: 0.48514110933606175
+PCK_MEAN: 0.48030635566606195
 ```
+Note: If procrustes analysis is used in `eval_mupots_pck_abs.py`, the obtained value is slightly different (PCK_MEAN: 0.48514110933606175). 
+
 ## License
 
 The code is released under the MIT license. See [LICENSE](LICENSE) for details.
