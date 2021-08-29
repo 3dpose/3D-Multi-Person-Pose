@@ -17,7 +17,7 @@ Overview of the proposed method:
 <p align="center"><img src="3DMPP_framework.png" width="98%"></p>
 
 ### Updates
-- 08/27/2021 evaluation code of PCK and PCK_abs is updated by adding bone length normalization option with dataset adaptation
+- 08/27/2021 evaluation code of PCK and PCK_abs is updated by using bone length normalization option with dataset adaptation
 - 06/18/2021 evaluation code of PCK (person-centric) and PCK_abs (camera-centric), and pre-trained model for MuPoTS dataset tested and released
 
 
