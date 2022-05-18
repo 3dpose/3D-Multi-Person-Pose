@@ -8,9 +8,9 @@
 
 This repository contains the code and models for the following paper.
 
-> [Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks](https://arxiv.org/pdf/2104.01797v2.pdf)  
-> Cheng Yu, Bo Wang, Bo Yang, Robby T. Tan  
-> Computer Vision and Pattern Recognition, CVPR 2021.
+> [Dual networks based 3D Multi-Person Pose Estimation from Monocular Video](https://arxiv.org/pdf/2205.00748v3.pdf)  
+> Cheng Yu, Bo Wang, Robby T. Tan  
+> IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
 
 Overview of the proposed method:
 
@@ -139,8 +139,15 @@ The code is released under the MIT license. See [LICENSE](LICENSE) for details.
 
 ## Citation
 
-If this work is useful for your research, please cite our paper. 
+If this work is useful for your research, please cite the following papers. 
 ```
+@article{cheng2022dual,
+  title={Dual networks based 3D Multi-Person Pose Estimation from Monocular Video},
+  author={Cheng, Yu and Wang, Bo and Tan, Robby},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2022},
+  publisher={IEEE}
+}
 @InProceedings{Cheng_2021_CVPR,
     author    = {Cheng, Yu and Wang, Bo and Yang, Bo and Tan, Robby T.},
     title     = {Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks},
