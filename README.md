@@ -12,11 +12,14 @@ This repository contains the code and models for the following paper.
 > Cheng Yu, Bo Wang, Robby T. Tan  
 > IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.
 
-Overview of the proposed method:
+#### Demo video
 
-<p align="center"><img src="3DMPP_framework.png" width="98%"></p>
+<a href="https://www.youtube.com/watch?v=IMFllAc9Flw" target="_blank">
+ <img src="https://i.ytimg.com/vi/IMFllAc9Flw/maxresdefault.jpg" alt="Watch the video" width="600" border="10" />
+</a>
 
 ### Updates
+- 05/18/2022 link to demo video of the TPAMI journal paper is added in the readme
 - 08/27/2021 evaluation code of PCK and PCK_abs is updated by using bone length normalization option with dataset adaptation
 - 06/18/2021 evaluation code of PCK (person-centric) and PCK_abs (camera-centric), and pre-trained model for MuPoTS dataset tested and released
 
