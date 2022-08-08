@@ -1,6 +1,6 @@
 ## Monocular 3D Multi-Person Pose Estimation by Integrating Top-Down and Bottom-Up Networks
 
-[![arXiv](https://img.shields.io/badge/arXiv-2104.01797v2-00ff00.svg)](https://arxiv.org/pdf/2104.01797v2.pdf)
+[![arXiv](https://img.shields.io/badge/arXiv-2205.00748v3-00ff00.svg)](https://arxiv.org/pdf/2205.00748v3.pdf)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dual-networks-based-3d-multi-person-pose/3d-multi-person-pose-estimation-absolute-on)](https://paperswithcode.com/sota/3d-multi-person-pose-estimation-absolute-on?p=dual-networks-based-3d-multi-person-pose)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dual-networks-based-3d-multi-person-pose/3d-multi-person-pose-estimation-root-relative)](https://paperswithcode.com/sota/3d-multi-person-pose-estimation-root-relative?p=dual-networks-based-3d-multi-person-pose)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/dual-networks-based-3d-multi-person-pose/3d-human-pose-estimation-on-jta)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-jta?p=dual-networks-based-3d-multi-person-pose)
