@@ -136,6 +136,14 @@ PCK_MEAN: 0.48030635566606195
 ```
 Note: If procrustes analysis is used in `eval_mupots_pck_abs.py`, the obtained value is slightly different (PCK_MEAN: 0.48514110933606175). 
 
+#### Apply on your own video
+
+To run the code on your own video, it is needed to generate p2d, affpts, and affb [(as defined here)](https://github.com/3dpose/3D-Multi-Person-Pose/blob/e6ec9384271ecc4ee70fbd3ba8d9c14ae53f91f8/calculate_mupots_topdown_pts.py#L58), which correspond to joints' location, joints' confidence, and bones' confidence. 
+   - For p2d and affpts, any off-the-shelf 2D pose estimators can be used to extract joints' location and their confidence values. 
+   - For affb, Part Affinity Field model can be used to extract the bone confidence, [example code is here](https://github.com/spmallick/learnopencv/blob/c4c5336f0bacb7528377638bd62714957a2c24e1/OpenPose-Multi-Person/multi-person-openpose.py#L112). 
+   - Note that we use the keypoint definition of H36M dataset, which is compatible with CrowdPose dataset but different from the COCO keypoint definition.
+
+
 ## License
 
 The code is released under the MIT license. See [LICENSE](LICENSE) for details.
