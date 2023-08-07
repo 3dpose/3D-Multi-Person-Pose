@@ -38,12 +38,12 @@ conda activate 3dmpp
 ```
 Install the latest version of pytorch (tested on pytorch 1.5 - 1.7) based on your OS and GPU driver installed following [install pytorch](https://pytorch.org/). For example, command to use on Linux with CUDA 11.0 is like:
 ```
-conda install pytorch torchvision cudatoolkit=11.0 -c pytorch
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
 Install dependencies
 ```
-pip install - r requirements.txt
+pip install -r requirements.txt
 ```
 
 Build the Fast Gaussian Map tool:
@@ -61,7 +61,14 @@ cd ../..
 Download the pre-trained model and processed human keypoint files [here](https://www.dropbox.com/s/n1twh0v5cyzd0z9/3DMPP.zip?dl=0), and unzip the downloaded zip file to this project's root directory, two folders are expected to see after doing that (i.e., `./ckpts` and `./mupots`).
 
 ### MuPoTS Dataset
-MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
+MuPoTS eval set is needed to perform evaluation as the results reported in Table 3 in the [main paper](https://arxiv.org/pdf/2104.01797v2.pdf), which is available on the [MuPoTS dataset website](http://gvv.mpi-inf.mpg.de/projects/SingleShotMultiPerson/). You need to download the `mupots-3d-eval.zip` file, unzip it, and run `get_mupots-3d.sh` to download the dataset. 
+
+if you encounter an error like: `/bin/bash: bad interpreter ... `, just launch:
+```
+sed -i 's/\r$//' get-mupots-3d.sh
+```
+
+After the download is complete, a `MultiPersonTestSet.zip` is avaiable, ~5.6 GB. Unzip it and move the folder `MultiPersonTestSet` to the root directory of the project to perform evaluation on MuPoTS test set. Now you should see the following directory structure. 
 ```
 ${3D-Multi-Person-Pose_ROOT}
 |-- ckpts              <-- the downloaded pre-trained Models
