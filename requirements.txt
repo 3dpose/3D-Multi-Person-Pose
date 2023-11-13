@@ -1,5 +1,5 @@
 opencv==4.0.0.1
-torchsul==0.1.31
+torchsul==0.1.28
 tqdm==4.64.1
 scipy==1.5.4
 cython==0.29.36
